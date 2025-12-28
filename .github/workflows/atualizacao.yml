@@ -1,17 +1,16 @@
 name: Atualizar Dados Futebol
 
 on:
+  workflow_dispatch:  # Permite rodar manualmente
   schedule:
-    # Roda todo dia às 09:00 UTC (06:00 da manhã no Brasil)
-    - cron: '0 9 * * *'
-  workflow_dispatch: # Permite você clicar num botão para rodar agora
+    - cron: '0 10 * * *'  # Roda todo dia às 10h UTC
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar repositório
+      - name: Set up job
         uses: actions/checkout@v3
 
       - name: Instalar Python
@@ -19,9 +18,9 @@ jobs:
         with:
           python-version: '3.9'
 
-     - name: Instalar bibliotecas
+      - name: Instalar bibliotecas
         run: |
-          pip install pandas numpy PyGithub lxml requests
+          pip install pandas numpy PyGithub lxml requests html5lib beautifulsoup4
 
       - name: Rodar script de atualização
         env:
