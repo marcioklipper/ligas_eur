@@ -1,104 +1,87 @@
 import pandas as pd
-import numpy as np
 import os
 from github import Github
-from io import StringIO
-import requests
-from datetime import datetime
 
-# CONFIGURAÇÕES
-GITHUB_TOKEN = os.getenv('GH_TOKEN')
-NOME_REPO = "marcioklipper/ligas_eur"
-ARQUIVO_JOGOS = "base_europa_unificada.csv"
+# --- CONFIGURAÇÕES ---
+GITHUB_TOKEN = os.getenv('GH_TOKEN') 
+NOME_REPO = "marcioklipper/ligas_eur"  # JÁ ATUALIZADO PARA O SEU REPO
+NOME_ARQUIVO_FINAL = "base_europa_unificada.csv"
+TEMPORADA = "2526"
 
-# URLs ESPN
-urls_ligas = {
-    'Premier League': 'https://www.espn.com.br/futebol/calendario/_/liga/ENG.1',
-    'La Liga': 'https://www.espn.com.br/futebol/calendario/_/liga/ESP.1',
-    'Serie A': 'https://www.espn.com.br/futebol/calendario/_/liga/ITA.1',
-    'Bundesliga': 'https://www.espn.com.br/futebol/calendario/_/liga/GER.1',
-    'Ligue 1': 'https://www.espn.com.br/futebol/calendario/_/liga/FRA.1',
-    'Primeira Liga': 'https://www.espn.com.br/futebol/calendario/_/liga/POR.1',
-    'Eredivisie': 'https://www.espn.com.br/futebol/calendario/_/liga/NED.1'
+# Dicionário de Ligas
+ligas = {
+    'E0': {'Pais': 'Inglaterra', 'Liga': 'Premier League'},
+    'SP1': {'Pais': 'Espanha',    'Liga': 'La Liga'},
+    'N1':  {'Pais': 'Holanda',    'Liga': 'Eredivisie'},
+    'I1':  {'Pais': 'Italia',     'Liga': 'Serie A'},
+    'D1':  {'Pais': 'Alemanha',   'Liga': 'Bundesliga'},
+    'P1':  {'Pais': 'Portugal',   'Liga': 'Liga Portugal'}
 }
 
-def main():
-    print("--- EXTRAÇÃO ESPN ---")
-    lista_dfs = []
-    headers = {'User-Agent': 'Mozilla/5.0'}
+print("--- INICIANDO ROBÔ DE ATUALIZAÇÃO ---")
 
-    for liga, url in urls_ligas.items():
-        print(f"Lendo: {liga}...")
-        try:
-            response = requests.get(url, headers=headers)
-            # Tenta ler tabelas com fallback de parsers
-            tabelas = pd.read_html(StringIO(response.text), flavor=['lxml', 'bs4'])
-            
-            for df in tabelas:
-                if len(df) < 2: continue
-                
-                # Procura coluna 'vs'
-                col_partida = next((c for c in df.columns if df[c].astype(str).str.contains(' vs ', na=False).any()), None)
-                
-                df_temp = df.copy()
-                if col_partida:
-                    try:
-                        div = df_temp[col_partida].str.split(' vs ', expand=True)
-                        if len(div.columns) >= 2:
-                            df_temp['Mandante'] = div[0].str.strip()
-                            df_temp['Visitante'] = div[1].str.strip()
-                        else: continue
-                    except: continue
-                elif len(df.columns) >= 4:
-                    df_temp['Mandante'] = df_temp.iloc[:, 0]
-                    df_temp['Visitante'] = df_temp.iloc[:, 1]
-                else: continue
-                
-                # Monta dataframe final
-                df_temp['Liga'] = liga
-                df_temp['Data'] = datetime.today().strftime('%Y-%m-%d')
-                df_temp['Gols_Mandante'] = np.nan
-                df_temp['Gols_Visitante'] = np.nan
-                df_temp['Resultado_Letra'] = np.nan
-                
-                # Seleciona colunas
-                cols = ['Data', 'Mandante', 'Visitante', 'Gols_Mandante', 'Gols_Visitante', 'Resultado_Letra', 'Liga']
-                for c in cols: 
-                    if c not in df_temp.columns: df_temp[c] = np.nan
-                
-                lista_dfs.append(df_temp[cols])
-        except Exception as e:
-            print(f"Erro {liga}: {e}")
+dfs = []
+base_url = f"https://www.football-data.co.uk/mmz4281/{TEMPORADA}/"
 
-    # Salvar no GitHub
-    g = Github(GITHUB_TOKEN)
-    repo = g.get_repo(NOME_REPO)
-    
-    # Baixar antigo
+# 1. DOWNLOAD E TRATAMENTO
+for codigo, info in ligas.items():
     try:
-        url_raw = f"https://raw.githubusercontent.com/{NOME_REPO}/main/{ARQUIVO_JOGOS}"
-        df_antigo = pd.read_csv(url_raw)
-    except: df_antigo = pd.DataFrame()
+        url = base_url + codigo + ".csv"
+        print(f"Baixando: {info['Liga']}...")
+        
+        df = pd.read_csv(url)
+        
+        # Padronização de colunas
+        cols_padrao = ['Date', 'Time', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR']
+        cols_existentes = [c for c in cols_padrao if c in df.columns]
+        df = df[cols_existentes]
+        
+        # Criar colunas extras
+        df['Liga'] = info['Liga']
+        df['Pais'] = info['Pais']
+        
+        dfs.append(df)
+        
+    except Exception as e:
+        print(f"Erro na liga {info['Liga']}: {e}")
 
-    # Unir
-    if lista_dfs:
-        df_novos = pd.concat(lista_dfs, ignore_index=True)
-        # Limpa logos
-        for c in ['Mandante', 'Visitante']:
-            df_novos[c] = df_novos[c].astype(str).str.replace(' logo', '', regex=False)
-            
-        df_final = pd.concat([df_antigo, df_novos], ignore_index=True)
+if dfs:
+    # 2. CONSOLIDAÇÃO
+    df_final = pd.concat(dfs, ignore_index=True)
+    
+    # Renomear colunas
+    df_final = df_final.rename(columns={
+        'Date': 'Data', 'Time': 'Hora', 'HomeTeam': 'Mandante', 'AwayTeam': 'Visitante',
+        'FTHG': 'Gols_Mandante', 'FTAG': 'Gols_Visitante', 'FTR': 'Resultado_Letra'
+    })
+    
+    # Tratamentos Finais
+    df_final['Data'] = pd.to_datetime(df_final['Data'], dayfirst=True)
+    
+    if 'Hora' in df_final.columns:
+        df_final['Hora'] = df_final['Hora'].fillna('00:00')
     else:
-        df_final = df_antigo
+        df_final['Hora'] = '00:00'
 
-    # Commit
-    if not df_final.empty:
+    # Salvar CSV na memória
+    csv_content = df_final.to_csv(index=False)
+    print(f"Dados processados! Total de linhas: {len(df_final)}")
+
+    # 3. UPLOAD PARA O GITHUB
+    try:
+        g = Github(GITHUB_TOKEN)
+        repo = g.get_repo(NOME_REPO)
+        
         try:
-            repo.update_file(ARQUIVO_JOGOS, "Update ESPN", df_final.to_csv(index=False), repo.get_contents(ARQUIVO_JOGOS).sha)
-            print("Atualizado!")
+            contents = repo.get_contents(NOME_ARQUIVO_FINAL)
+            repo.update_file(contents.path, "Atualização Automática", csv_content, contents.sha)
+            print("Arquivo ATUALIZADO com sucesso!")
         except:
-            repo.create_file(ARQUIVO_JOGOS, "Create ESPN", df_final.to_csv(index=False))
-            print("Criado!")
-
-if __name__ == "__main__":
-    main()
+            repo.create_file(NOME_ARQUIVO_FINAL, "Carga Inicial", csv_content)
+            print("Arquivo CRIADO com sucesso!")
+            
+    except Exception as e:
+        print(f"Erro no GitHub: {e}")
+        
+else:
+    print("Nenhum dado encontrado.")
