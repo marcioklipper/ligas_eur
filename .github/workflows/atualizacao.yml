@@ -21,7 +21,7 @@ jobs:
 
       - name: Instalar bibliotecas
         run: |
-          pip install pandas PyGithub
+          pip install pandas numpy PyGithub lxml requests
 
       - name: Rodar script de atualização
         env:
