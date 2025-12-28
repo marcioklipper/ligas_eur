@@ -21,7 +21,7 @@ jobs:
 
       - name: Instalar bibliotecas
         run: |
-          pip install pandas numpy PyGithub lxml requests
+          pip install pandas numpy PyGithub lxml requests html5lib
 
       - name: Rodar script de atualização
         env:
