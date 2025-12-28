@@ -1,0 +1,29 @@
+name: Atualizar Dados Futebol
+
+on:
+  schedule:
+    # Roda todo dia às 09:00 UTC (06:00 da manhã no Brasil)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Permite você clicar num botão para rodar agora
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar bibliotecas
+        run: |
+          pip install pandas PyGithub
+
+      - name: Rodar script de atualização
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python etl_futebol.py
