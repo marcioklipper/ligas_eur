@@ -390,6 +390,14 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-01-04,17:30,Alaves,Oviedo,1,1,D,La Liga,Espanha
 2026-01-04,17:30,Mallorca,Girona,1,2,A,La Liga,Espanha
 2026-01-04,20:00,Sociedad,Ath Madrid,1,1,D,La Liga,Espanha
+2026-01-09,20:00,Getafe,Sociedad,1,2,A,La Liga,Espanha
+2026-01-10,13:00,Oviedo,Betis,1,1,D,La Liga,Espanha
+2026-01-10,15:15,Villarreal,Alaves,3,1,H,La Liga,Espanha
+2026-01-10,17:30,Girona,Osasuna,1,0,H,La Liga,Espanha
+2026-01-10,20:00,Valencia,Elche,1,1,D,La Liga,Espanha
+2026-01-11,13:00,Vallecano,Mallorca,2,1,H,La Liga,Espanha
+2026-01-11,15:15,Levante,Espanol,1,1,D,La Liga,Espanha
+2026-01-12,20:00,Sevilla,Celta,0,1,A,La Liga,Espanha
 2025-08-08,19:00,For Sittard,Go Ahead Eagles,2,2,D,Eredivisie,Holanda
 2025-08-09,15:30,Nijmegen,Excelsior,5,0,H,Eredivisie,Holanda
 2025-08-09,17:45,Feyenoord,NAC Breda,2,0,H,Eredivisie,Holanda
@@ -542,6 +550,14 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2025-12-21,13:30,Go Ahead Eagles,Groningen,1,1,D,Eredivisie,Holanda
 2025-12-21,15:45,For Sittard,AZ Alkmaar,4,3,H,Eredivisie,Holanda
 2025-12-21,15:45,Volendam,Sparta Rotterdam,0,1,A,Eredivisie,Holanda
+2026-01-10,15:30,AZ Alkmaar,Volendam,1,0,H,Eredivisie,Holanda
+2026-01-10,17:45,Twente,Zwolle,1,1,D,Eredivisie,Holanda
+2026-01-10,19:00,PSV Eindhoven,Excelsior,5,1,H,Eredivisie,Holanda
+2026-01-10,20:00,Groningen,NAC Breda,0,0,D,Eredivisie,Holanda
+2026-01-11,11:15,Heerenveen,Feyenoord,2,2,D,Eredivisie,Holanda
+2026-01-11,13:30,Go Ahead Eagles,For Sittard,2,2,D,Eredivisie,Holanda
+2026-01-11,13:30,Telstar,Ajax,2,3,A,Eredivisie,Holanda
+2026-01-11,15:45,Sparta Rotterdam,Heracles,2,0,H,Eredivisie,Holanda
 2025-08-23,17:30,Genoa,Lecce,0,0,D,Serie A,Italia
 2025-08-23,17:30,Sassuolo,Napoli,0,2,A,Serie A,Italia
 2025-08-23,19:45,Milan,Cremonese,1,2,A,Serie A,Italia
@@ -728,6 +744,16 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-01-07,19:45,Torino,Udinese,1,2,A,Serie A,Italia
 2026-01-08,17:30,Cremonese,Cagliari,2,2,D,Serie A,Italia
 2026-01-08,19:45,Milan,Genoa,1,1,D,Serie A,Italia
+2026-01-10,14:00,Como,Bologna,1,1,D,Serie A,Italia
+2026-01-10,14:00,Udinese,Pisa,2,2,D,Serie A,Italia
+2026-01-10,17:00,Roma,Sassuolo,2,0,H,Serie A,Italia
+2026-01-10,19:45,Atalanta,Torino,2,0,H,Serie A,Italia
+2026-01-11,11:30,Lecce,Parma,1,2,A,Serie A,Italia
+2026-01-11,14:00,Fiorentina,Milan,1,1,D,Serie A,Italia
+2026-01-11,17:00,Verona,Lazio,0,1,A,Serie A,Italia
+2026-01-11,19:45,Inter,Napoli,2,2,D,Serie A,Italia
+2026-01-12,17:30,Genoa,Cagliari,3,0,H,Serie A,Italia
+2026-01-12,19:45,Juventus,Cremonese,5,0,H,Serie A,Italia
 2025-08-22,19:30,Bayern Munich,RB Leipzig,6,0,H,Bundesliga,Alemanha
 2025-08-23,14:30,Ein Frankfurt,Werder Bremen,4,1,H,Bundesliga,Alemanha
 2025-08-23,14:30,Freiburg,Augsburg,1,3,A,Bundesliga,Alemanha
@@ -863,6 +889,13 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2025-12-20,17:30,RB Leipzig,Leverkusen,1,3,A,Bundesliga,Alemanha
 2025-12-21,14:30,Mainz,St Pauli,0,0,D,Bundesliga,Alemanha
 2025-12-21,16:30,Heidenheim,Bayern Munich,0,4,A,Bundesliga,Alemanha
+2026-01-09,19:30,Ein Frankfurt,Dortmund,3,3,D,Bundesliga,Alemanha
+2026-01-10,14:30,Freiburg,Hamburg,2,1,H,Bundesliga,Alemanha
+2026-01-10,14:30,Heidenheim,FC Koln,2,2,D,Bundesliga,Alemanha
+2026-01-10,14:30,Union Berlin,Mainz,2,2,D,Bundesliga,Alemanha
+2026-01-10,17:30,Leverkusen,Stuttgart,1,4,A,Bundesliga,Alemanha
+2026-01-11,14:30,M'gladbach,Augsburg,4,0,H,Bundesliga,Alemanha
+2026-01-11,16:30,Bayern Munich,Wolfsburg,8,1,H,Bundesliga,Alemanha
 2025-08-08,20:15,Casa Pia,Sp Lisbon,0,2,A,Liga Portugal,Portugal
 2025-08-09,15:30,Nacional,Gil Vicente,0,2,A,Liga Portugal,Portugal
 2025-08-09,20:30,Arouca,AVS,3,1,H,Liga Portugal,Portugal
@@ -1014,3 +1047,5 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-01-04,15:30,Rio Ave,Casa Pia,3,1,H,Liga Portugal,Portugal
 2026-01-04,18:00,Santa Clara,Porto,0,1,A,Liga Portugal,Portugal
 2026-01-04,20:30,Alverca,Famalicao,1,0,H,Liga Portugal,Portugal
+2026-01-11,15:30,Nacional,Santa Clara,3,3,D,Liga Portugal,Portugal
+2026-01-11,18:00,Moreirense,Tondela,1,0,H,Liga Portugal,Portugal
