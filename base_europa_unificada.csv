@@ -269,6 +269,7 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-02-22,14:00,Nott'm Forest,Liverpool,0,1,A,Premier League,Inglaterra
 2026-02-22,14:00,Sunderland,Fulham,1,3,A,Premier League,Inglaterra
 2026-02-22,16:30,Tottenham,Arsenal,1,4,A,Premier League,Inglaterra
+2026-02-23,20:00,Everton,Man United,0,1,A,Premier League,Inglaterra
 2025-08-15,18:00,Girona,Vallecano,1,3,A,La Liga,Espanha
 2025-08-15,20:30,Villarreal,Oviedo,2,0,H,La Liga,Espanha
 2025-08-16,18:30,Mallorca,Barcelona,0,3,A,La Liga,Espanha
@@ -517,6 +518,7 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-02-22,15:15,Barcelona,Levante,3,0,H,La Liga,Espanha
 2026-02-22,17:30,Celta,Mallorca,2,0,H,La Liga,Espanha
 2026-02-22,20:00,Villarreal,Valencia,2,1,H,La Liga,Espanha
+2026-02-23,20:00,Alaves,Girona,2,2,D,La Liga,Espanha
 2025-08-08,19:00,For Sittard,Go Ahead Eagles,2,2,D,Eredivisie,Holanda
 2025-08-09,15:30,Nijmegen,Excelsior,5,0,H,Eredivisie,Holanda
 2025-08-09,17:45,Feyenoord,NAC Breda,2,0,H,Eredivisie,Holanda
@@ -991,6 +993,8 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-02-22,14:00,Atalanta,Napoli,2,1,H,Serie A,Italia
 2026-02-22,17:00,Milan,Parma,0,1,A,Serie A,Italia
 2026-02-22,19:45,Roma,Cremonese,3,0,H,Serie A,Italia
+2026-02-23,17:30,Fiorentina,Pisa,1,0,H,Serie A,Italia
+2026-02-23,19:45,Bologna,Udinese,1,0,H,Serie A,Italia
 2025-08-22,19:30,Bayern Munich,RB Leipzig,6,0,H,Bundesliga,Alemanha
 2025-08-23,14:30,Ein Frankfurt,Werder Bremen,4,1,H,Bundesliga,Alemanha
 2025-08-23,14:30,Freiburg,Augsburg,1,3,A,Bundesliga,Alemanha
@@ -1403,3 +1407,4 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-02-21,20:30,Sp Braga,Guimaraes,3,2,H,Liga Portugal,Portugal
 2026-02-22,18:00,Estoril,Gil Vicente,3,1,H,Liga Portugal,Portugal
 2026-02-22,20:30,Porto,Rio Ave,1,0,H,Liga Portugal,Portugal
+2026-02-23,20:15,Famalicao,Casa Pia,2,0,H,Liga Portugal,Portugal
