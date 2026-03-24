@@ -300,6 +300,14 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,14:00,Nott'm Forest,Fulham,0,0,D,Premier League,Inglaterra
 2026-03-15,16:30,Liverpool,Tottenham,1,1,D,Premier League,Inglaterra
 2026-03-16,20:00,Brentford,Wolves,2,2,D,Premier League,Inglaterra
+2026-03-20,20:00,Bournemouth,Man United,2,2,D,Premier League,Inglaterra
+2026-03-21,12:30,Brighton,Liverpool,2,1,H,Premier League,Inglaterra
+2026-03-21,15:00,Fulham,Burnley,3,1,H,Premier League,Inglaterra
+2026-03-21,17:30,Everton,Chelsea,3,0,H,Premier League,Inglaterra
+2026-03-21,20:00,Leeds,Brentford,0,0,D,Premier League,Inglaterra
+2026-03-22,12:00,Newcastle,Sunderland,1,2,A,Premier League,Inglaterra
+2026-03-22,14:15,Aston Villa,West Ham,2,0,H,Premier League,Inglaterra
+2026-03-22,14:15,Tottenham,Nott'm Forest,0,3,A,Premier League,Inglaterra
 2025-08-15,18:00,Girona,Vallecano,1,3,A,La Liga,Espanha
 2025-08-15,20:30,Villarreal,Oviedo,2,0,H,La Liga,Espanha
 2025-08-16,18:30,Mallorca,Barcelona,0,3,A,La Liga,Espanha
@@ -580,6 +588,16 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,17:30,Betis,Celta,1,1,D,La Liga,Espanha
 2026-03-15,20:00,Sociedad,Osasuna,3,1,H,La Liga,Espanha
 2026-03-16,20:00,Vallecano,Levante,1,1,D,La Liga,Espanha
+2026-03-20,20:00,Villarreal,Sociedad,3,1,H,La Liga,Espanha
+2026-03-21,13:00,Elche,Mallorca,2,1,H,La Liga,Espanha
+2026-03-21,15:15,Espanol,Getafe,1,2,A,La Liga,Espanha
+2026-03-21,17:30,Levante,Oviedo,4,2,H,La Liga,Espanha
+2026-03-21,17:30,Osasuna,Girona,1,0,H,La Liga,Espanha
+2026-03-21,20:00,Sevilla,Valencia,0,2,A,La Liga,Espanha
+2026-03-22,13:00,Barcelona,Vallecano,1,0,H,La Liga,Espanha
+2026-03-22,15:15,Celta,Alaves,3,4,A,La Liga,Espanha
+2026-03-22,17:30,Ath Bilbao,Betis,2,1,H,La Liga,Espanha
+2026-03-22,20:00,Real Madrid,Ath Madrid,3,2,H,La Liga,Espanha
 2025-08-08,19:00,For Sittard,Go Ahead Eagles,2,2,D,Eredivisie,Holanda
 2025-08-09,15:30,Nijmegen,Excelsior,5,0,H,Eredivisie,Holanda
 2025-08-09,17:45,Feyenoord,NAC Breda,2,0,H,Eredivisie,Holanda
@@ -823,6 +841,15 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,13:30,AZ Alkmaar,Heracles,4,0,H,Eredivisie,Holanda
 2026-03-15,13:30,Feyenoord,Excelsior,2,1,H,Eredivisie,Holanda
 2026-03-15,15:45,Go Ahead Eagles,NAC Breda,6,0,H,Eredivisie,Holanda
+2026-03-20,19:00,Heracles,Excelsior,1,1,D,Eredivisie,Holanda
+2026-03-21,15:30,For Sittard,Twente,1,2,A,Eredivisie,Holanda
+2026-03-21,17:45,Sparta Rotterdam,Volendam,2,0,H,Eredivisie,Holanda
+2026-03-21,20:00,Zwolle,NAC Breda,2,1,H,Eredivisie,Holanda
+2026-03-22,11:15,Nijmegen,Heerenveen,2,2,D,Eredivisie,Holanda
+2026-03-22,13:30,Feyenoord,Ajax,1,1,D,Eredivisie,Holanda
+2026-03-22,13:30,Utrecht,Go Ahead Eagles,2,0,H,Eredivisie,Holanda
+2026-03-22,15:45,Groningen,AZ Alkmaar,3,0,H,Eredivisie,Holanda
+2026-03-22,15:45,Telstar,PSV Eindhoven,3,1,H,Eredivisie,Holanda
 2025-08-23,17:30,Genoa,Lecce,0,0,D,Serie A,Italia
 2025-08-23,17:30,Sassuolo,Napoli,0,2,A,Serie A,Italia
 2025-08-23,19:45,Milan,Cremonese,1,2,A,Serie A,Italia
@@ -1113,6 +1140,16 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,17:00,Como,Roma,2,1,H,Serie A,Italia
 2026-03-15,19:45,Lazio,Milan,1,0,H,Serie A,Italia
 2026-03-16,19:45,Cremonese,Fiorentina,1,4,A,Serie A,Italia
+2026-03-20,17:30,Cagliari,Napoli,0,1,A,Serie A,Italia
+2026-03-20,19:45,Genoa,Udinese,0,2,A,Serie A,Italia
+2026-03-21,14:00,Parma,Cremonese,0,2,A,Serie A,Italia
+2026-03-21,17:00,Milan,Torino,3,2,H,Serie A,Italia
+2026-03-21,19:45,Juventus,Sassuolo,1,1,D,Serie A,Italia
+2026-03-22,11:30,Como,Pisa,5,0,H,Serie A,Italia
+2026-03-22,14:00,Atalanta,Verona,1,0,H,Serie A,Italia
+2026-03-22,14:00,Bologna,Lazio,0,2,A,Serie A,Italia
+2026-03-22,17:00,Roma,Lecce,1,0,H,Serie A,Italia
+2026-03-22,19:45,Fiorentina,Inter,1,1,D,Serie A,Italia
 2025-08-22,19:30,Bayern Munich,RB Leipzig,6,0,H,Bundesliga,Alemanha
 2025-08-23,14:30,Ein Frankfurt,Werder Bremen,4,1,H,Bundesliga,Alemanha
 2025-08-23,14:30,Freiburg,Augsburg,1,3,A,Bundesliga,Alemanha
@@ -1347,6 +1384,15 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,14:30,Werder Bremen,Mainz,0,2,A,Bundesliga,Alemanha
 2026-03-15,16:30,Freiburg,Union Berlin,0,1,A,Bundesliga,Alemanha
 2026-03-15,18:30,Stuttgart,RB Leipzig,1,0,H,Bundesliga,Alemanha
+2026-03-20,19:30,RB Leipzig,Hoffenheim,5,0,H,Bundesliga,Alemanha
+2026-03-21,14:30,Bayern Munich,Union Berlin,4,0,H,Bundesliga,Alemanha
+2026-03-21,14:30,FC Koln,M'gladbach,3,3,D,Bundesliga,Alemanha
+2026-03-21,14:30,Heidenheim,Leverkusen,3,3,D,Bundesliga,Alemanha
+2026-03-21,14:30,Wolfsburg,Werder Bremen,0,1,A,Bundesliga,Alemanha
+2026-03-21,17:30,Dortmund,Hamburg,3,2,H,Bundesliga,Alemanha
+2026-03-22,14:30,Mainz,Ein Frankfurt,2,1,H,Bundesliga,Alemanha
+2026-03-22,16:30,St Pauli,Freiburg,1,2,A,Bundesliga,Alemanha
+2026-03-22,18:30,Augsburg,Stuttgart,2,5,A,Bundesliga,Alemanha
 2025-08-08,20:15,Casa Pia,Sp Lisbon,0,2,A,Liga Portugal,Portugal
 2025-08-09,15:30,Nacional,Gil Vicente,0,2,A,Liga Portugal,Portugal
 2025-08-09,20:30,Arouca,AVS,3,1,H,Liga Portugal,Portugal
@@ -1579,3 +1625,12 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-15,15:30,Nacional,Estoril,0,1,A,Liga Portugal,Portugal
 2026-03-15,18:00,Rio Ave,Estrela,2,1,H,Liga Portugal,Portugal
 2026-03-15,20:30,Porto,Moreirense,3,0,H,Liga Portugal,Portugal
+2026-03-20,20:15,Estrela,Casa Pia,4,0,H,Liga Portugal,Portugal
+2026-03-21,15:30,Famalicao,Nacional,1,0,H,Liga Portugal,Portugal
+2026-03-21,15:30,Moreirense,Arouca,0,1,A,Liga Portugal,Portugal
+2026-03-21,18:00,Benfica,Guimaraes,3,0,H,Liga Portugal,Portugal
+2026-03-21,18:00,Santa Clara,Gil Vicente,1,0,H,Liga Portugal,Portugal
+2026-03-21,20:30,Tondela,AVS,0,0,D,Liga Portugal,Portugal
+2026-03-22,15:30,Estoril,Rio Ave,1,2,A,Liga Portugal,Portugal
+2026-03-22,18:00,Alverca,Sp Lisbon,1,4,A,Liga Portugal,Portugal
+2026-03-22,20:30,Sp Braga,Porto,1,2,A,Liga Portugal,Portugal
