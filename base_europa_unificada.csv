@@ -598,6 +598,15 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-22,15:15,Celta,Alaves,3,4,A,La Liga,Espanha
 2026-03-22,17:30,Ath Bilbao,Betis,2,1,H,La Liga,Espanha
 2026-03-22,20:00,Real Madrid,Ath Madrid,3,2,H,La Liga,Espanha
+2026-04-04,15:30,Getafe,Ath Bilbao,2,0,H,La Liga,Espanha
+2026-04-04,16:00,Vallecano,Elche,1,0,H,La Liga,Espanha
+2026-04-04,17:30,Ath Madrid,Barcelona,1,2,A,La Liga,Espanha
+2026-04-04,17:45,Oviedo,Sevilla,1,0,H,La Liga,Espanha
+2026-04-04,18:00,Betis,Espanol,0,0,D,La Liga,Espanha
+2026-04-04,20:05,Sociedad,Levante,2,0,H,La Liga,Espanha
+2026-04-05,12:30,Mallorca,Real Madrid,2,1,H,La Liga,Espanha
+2026-04-05,15:00,Valencia,Celta,2,3,A,La Liga,Espanha
+2026-04-05,15:45,Alaves,Osasuna,2,2,D,La Liga,Espanha
 2025-08-08,19:00,For Sittard,Go Ahead Eagles,2,2,D,Eredivisie,Holanda
 2025-08-09,15:30,Nijmegen,Excelsior,5,0,H,Eredivisie,Holanda
 2025-08-09,17:45,Feyenoord,NAC Breda,2,0,H,Eredivisie,Holanda
@@ -850,6 +859,15 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-22,13:30,Utrecht,Go Ahead Eagles,2,0,H,Eredivisie,Holanda
 2026-03-22,15:45,Groningen,AZ Alkmaar,3,0,H,Eredivisie,Holanda
 2026-03-22,15:45,Telstar,PSV Eindhoven,3,1,H,Eredivisie,Holanda
+2026-04-04,15:00,Excelsior,Nijmegen,0,2,A,Eredivisie,Holanda
+2026-04-04,15:00,Go Ahead Eagles,Zwolle,5,0,H,Eredivisie,Holanda
+2026-04-04,15:00,Volendam,Feyenoord,0,0,D,Eredivisie,Holanda
+2026-04-04,16:00,NAC Breda,Sparta Rotterdam,0,0,D,Eredivisie,Holanda
+2026-04-04,17:30,PSV Eindhoven,Utrecht,4,3,H,Eredivisie,Holanda
+2026-04-04,18:00,Heerenveen,Heracles,4,1,H,Eredivisie,Holanda
+2026-04-04,20:00,Ajax,Twente,1,2,A,Eredivisie,Holanda
+2026-04-05,12:30,AZ Alkmaar,For Sittard,2,0,H,Eredivisie,Holanda
+2026-04-05,19:45,Telstar,Groningen,0,2,A,Eredivisie,Holanda
 2025-08-23,17:30,Genoa,Lecce,0,0,D,Serie A,Italia
 2025-08-23,17:30,Sassuolo,Napoli,0,2,A,Serie A,Italia
 2025-08-23,19:45,Milan,Cremonese,1,2,A,Serie A,Italia
@@ -1150,6 +1168,12 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-22,14:00,Bologna,Lazio,0,2,A,Serie A,Italia
 2026-03-22,17:00,Roma,Lecce,1,0,H,Serie A,Italia
 2026-03-22,19:45,Fiorentina,Inter,1,1,D,Serie A,Italia
+2026-04-03,19:00,Lazio,Parma,1,1,D,Serie A,Italia
+2026-04-04,14:30,Sassuolo,Cagliari,2,1,H,Serie A,Italia
+2026-04-04,15:00,Verona,Fiorentina,0,1,A,Serie A,Italia
+2026-04-05,12:30,Inter,Roma,5,2,H,Serie A,Italia
+2026-04-05,15:15,Pisa,Torino,0,1,A,Serie A,Italia
+2026-04-05,18:30,Cremonese,Bologna,1,2,A,Serie A,Italia
 2025-08-22,19:30,Bayern Munich,RB Leipzig,6,0,H,Bundesliga,Alemanha
 2025-08-23,14:30,Ein Frankfurt,Werder Bremen,4,1,H,Bundesliga,Alemanha
 2025-08-23,14:30,Freiburg,Augsburg,1,3,A,Bundesliga,Alemanha
@@ -1393,6 +1417,15 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-22,14:30,Mainz,Ein Frankfurt,2,1,H,Bundesliga,Alemanha
 2026-03-22,16:30,St Pauli,Freiburg,1,2,A,Bundesliga,Alemanha
 2026-03-22,18:30,Augsburg,Stuttgart,2,5,A,Bundesliga,Alemanha
+2026-04-03,19:45,Ein Frankfurt,FC Koln,2,2,D,Bundesliga,Alemanha
+2026-04-04,14:30,Stuttgart,Dortmund,0,2,A,Bundesliga,Alemanha
+2026-04-04,15:00,Hamburg,Augsburg,1,1,D,Bundesliga,Alemanha
+2026-04-04,15:00,Werder Bremen,RB Leipzig,1,2,A,Bundesliga,Alemanha
+2026-04-05,12:30,Leverkusen,Wolfsburg,6,3,H,Bundesliga,Alemanha
+2026-04-05,13:30,M'gladbach,Heidenheim,2,2,D,Bundesliga,Alemanha
+2026-04-05,13:30,Union Berlin,St Pauli,1,1,D,Bundesliga,Alemanha
+2026-04-05,16:15,Hoffenheim,Mainz,1,2,A,Bundesliga,Alemanha
+2026-04-05,16:30,Freiburg,Bayern Munich,2,3,A,Bundesliga,Alemanha
 2025-08-08,20:15,Casa Pia,Sp Lisbon,0,2,A,Liga Portugal,Portugal
 2025-08-09,15:30,Nacional,Gil Vicente,0,2,A,Liga Portugal,Portugal
 2025-08-09,20:30,Arouca,AVS,3,1,H,Liga Portugal,Portugal
@@ -1634,3 +1667,9 @@ Data,Hora,Mandante,Visitante,Gols_Mandante,Gols_Visitante,Resultado_Letra,Liga,P
 2026-03-22,15:30,Estoril,Rio Ave,1,2,A,Liga Portugal,Portugal
 2026-03-22,18:00,Alverca,Sp Lisbon,1,4,A,Liga Portugal,Portugal
 2026-03-22,20:30,Sp Braga,Porto,1,2,A,Liga Portugal,Portugal
+2026-04-03,19:45,Guimaraes,Tondela,5,0,H,Liga Portugal,Portugal
+2026-04-04,12:00,Nacional,Estrela,2,0,H,Liga Portugal,Portugal
+2026-04-04,14:00,Porto,Famalicao,2,2,D,Liga Portugal,Portugal
+2026-04-04,15:00,Sp Lisbon,Santa Clara,4,2,H,Liga Portugal,Portugal
+2026-04-05,12:30,Moreirense,Sp Braga,0,1,A,Liga Portugal,Portugal
+2026-04-05,15:00,Gil Vicente,AVS,3,0,H,Liga Portugal,Portugal
